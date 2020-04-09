@@ -25,12 +25,12 @@
   
   position: relative;
   overflow: hidden;
-  height:200px;
+  height:500px;
 }
 #video_background {
   position: absolute;
   min-width: 100%;
-  min-height: 100%;
+  min-height: 144%;
   
   z-index: -999;
 }
@@ -38,7 +38,7 @@
   background: rgba(0,0,0,0.4) ; 
 }
 .logo {
-  width: 138px;
+  width: 154px;
   height: 67px;
   margin: 5px 5px 5px 5px;
 }
