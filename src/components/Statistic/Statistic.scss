@@ -1,0 +1,29 @@
+.statistic {
+    display: flex;
+    margin: 50px 100px;
+    
+    justify-content: space-between;
+}
+.statistic-item {
+    display: flex;
+    
+    align-items: center;
+}
+.fas {
+    color: #2ecc71;
+    font-size: 50px;
+}
+.far {
+    color: #2ecc71;
+    font-size: 50px;
+}
+.statistic-item-content {
+    display: flex;
+    flex-direction: column;
+}
+.statistic-item-content-number {
+ color:#4cd137;
+}
+.statistic-item-content-text {
+color: #badc58;
+}
