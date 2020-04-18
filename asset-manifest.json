@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/frogsleap/static/css/main.4cfc0974.chunk.css",
-    "main.js": "/frogsleap/static/js/main.7afa794d.chunk.js",
-    "main.js.map": "/frogsleap/static/js/main.7afa794d.chunk.js.map",
+    "main.css": "/frogsleap/static/css/main.bfb8563d.chunk.css",
+    "main.js": "/frogsleap/static/js/main.2d9fac55.chunk.js",
+    "main.js.map": "/frogsleap/static/js/main.2d9fac55.chunk.js.map",
     "runtime-main.js": "/frogsleap/static/js/runtime-main.6b6a5b6a.js",
     "runtime-main.js.map": "/frogsleap/static/js/runtime-main.6b6a5b6a.js.map",
     "static/js/2.12d6ede6.chunk.js": "/frogsleap/static/js/2.12d6ede6.chunk.js",
     "static/js/2.12d6ede6.chunk.js.map": "/frogsleap/static/js/2.12d6ede6.chunk.js.map",
     "index.html": "/frogsleap/index.html",
-    "precache-manifest.7580dbc0519133856dca5a2746c80192.js": "/frogsleap/precache-manifest.7580dbc0519133856dca5a2746c80192.js",
+    "precache-manifest.843fc749254ea42a6e714e5c5639cabf.js": "/frogsleap/precache-manifest.843fc749254ea42a6e714e5c5639cabf.js",
     "service-worker.js": "/frogsleap/service-worker.js",
-    "static/css/main.4cfc0974.chunk.css.map": "/frogsleap/static/css/main.4cfc0974.chunk.css.map",
+    "static/css/main.bfb8563d.chunk.css.map": "/frogsleap/static/css/main.bfb8563d.chunk.css.map",
     "static/js/2.12d6ede6.chunk.js.LICENSE.txt": "/frogsleap/static/js/2.12d6ede6.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.6b6a5b6a.js",
     "static/js/2.12d6ede6.chunk.js",
-    "static/css/main.4cfc0974.chunk.css",
-    "static/js/main.7afa794d.chunk.js"
+    "static/css/main.bfb8563d.chunk.css",
+    "static/js/main.2d9fac55.chunk.js"
   ]
 }
