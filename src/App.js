@@ -7,6 +7,8 @@ import Statistic from './components/Statistic';
 import Activities from './components/Activities';
 import Videos from './components/Videos';
 import Quotes from './components/Quotes';
+import Partners from './components/Partners';
+import Footer from './components/Footer';
 import './App.css';
 //import NotFound from './pages/NotFound';
 
@@ -24,6 +26,8 @@ function App() {
             <Activities/>
             <Videos/>
             <Quotes/>
+            <Partners/>
+            <Footer/>
             <Switch>
               {/* <Route exact path="/" component={ Home }/> */}
               

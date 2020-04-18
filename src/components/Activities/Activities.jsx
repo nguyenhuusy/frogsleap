@@ -124,7 +124,7 @@ class Activities extends Component {
     return (
       <div className="activities">
         {/* <ul className="slideshow-container" onMouseDown={this.mousedown} onMouseUp={this.mouseup} onMouseMove={(e) => this.mousemove(e)}> */}
-        <ul className="slideshow-container" >
+        <ul className="slideshow-container" draggable="true">
 
           {ActivitiesData.map((item, idx) =>
             <ActivitiesList
