@@ -1,0 +1,38 @@
+.quotes {
+    display:flex;
+    margin: 50px;
+    padding: 50px;
+    background: #78e08f;
+    .quotes-left {
+        width:45%;
+        display:flex;
+        justify-content: center;
+        .quotes-left-img {
+            width:200px;
+            height:300px;
+        }
+    }
+    .quotes-right {
+        //display:flex;
+        width:100%;
+        //flex-direction: column;
+        
+        .fa-quote-left {
+            color: #27ae60;
+            background: transparent;
+            font-size: 50px;
+        }
+        .quotes-right-name {
+            color: #27ae60;
+            font-size: 20px;
+            display: inline-flex;
+            margin-left: 460px;
+
+        }
+        .quotes-right-position {
+            color: #95a5a6;
+            margin-left: 460px;
+
+        }
+    }
+}

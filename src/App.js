@@ -4,6 +4,10 @@ import { Provider } from 'react-redux';
 import store from './redux/store';
 import Header from './components/Header';
 import Statistic from './components/Statistic';
+import Activities from './components/Activities';
+import Videos from './components/Videos';
+import Quotes from './components/Quotes';
+import './App.css';
 //import NotFound from './pages/NotFound';
 
 
@@ -17,6 +21,9 @@ function App() {
           <BrowserRouter>
             <Header/>
             <Statistic/>
+            <Activities/>
+            <Videos/>
+            <Quotes/>
             <Switch>
               {/* <Route exact path="/" component={ Home }/> */}
               

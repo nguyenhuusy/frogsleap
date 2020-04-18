@@ -1,0 +1,101 @@
+class Activities extends Component {
+  constructor() {
+    super();
+    this.state = {
+
+    }
+  }
+  componentDidMount = () => {
+    this.showSlides(slideIndex);
+  }
+
+
+  // Next/previous controls
+  plusSlides = (n, c) => {
+    this.showSlides(slideIndex += n, c);
+  }
+
+  // Thumbnail image controls
+  currentSlide = (n) => {
+    this.showSlides(slideIndex = n);
+  }
+
+  showSlides = (n, c) => {
+    var i, a, b;
+
+    var slides = document.getElementsByClassName("myslides");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    if ((slideIndex - 1) === 5) {
+      a = 4;
+      b = 0;
+    } else if ((slideIndex - 1) === 0) {
+      a = 5;
+      b = 1;
+    } else {
+      a = slideIndex - 2;
+      b = slideIndex;
+    }
+     for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+     }
+    console.log('trái giữa phải', a, '/', slideIndex - 1, '/', b)
+    //slides[slideIndex - 1].style.display = "block";
+    //slides[a].style.display = "block";
+    //slides[b].style.display = "block";
+    slides[slideIndex - 1].style.left = "234px";
+    slides[slideIndex - 1].style.transform = "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)"
+    slides[a].style.left = "-366px";
+    slides[a].style.transform = "matrix3d(0.379526, 0, -0.241785, 0.000201487, 0, 0.45, 0, 0, 0.5373, 0, 0.843391, -0.000702826, 150, 0, 0, 1)"
+    slides[b].style.left = "834px";
+    slides[b].style.transform = "matrix3d(0.379526, 0, 0.241785, -0.000201487, 0, 0.45, 0, 0, -0.5373, 0, 0.843391, -0.000702826, -150, 0, 0, 1)"
+
+    // for (i = 0; i < slides.length; i++) {
+    //   var a=slides[i].style.left;
+    //   var b= a.slice(0,a.length-2)
+    //   if (c>0) {
+    //   slides[i].style.left =`${Number(b) - 600}px` } 
+    //   else {slides[i].style.left =`${Number(b) + 600}px`}
+
+    //    if (slides[0].style.left==='234px') {
+    //      slides[slides.length-1].style.left= "-366px"
+    //    }
+    //   if (slides[i].style.left==='834px') {
+    //     slides[i].style.transform="matrix3d(0.379526, 0, 0.241785, -0.000201487, 0, 0.45, 0, 0, -0.5373, 0, 0.843391, -0.000702826, -150, 0, 0, 1)"
+    //   }
+    //   if (slides[i].style.left==='234px') {
+    //     slides[i].style.transform="matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)"
+    //   }
+    //   if (slides[i].style.left==='-366px') {
+    //     slides[i].style.transform="matrix3d(0.379526, 0, -0.241785, 0.000201487, 0, 0.45, 0, 0, 0.5373, 0, 0.843391, -0.000702826, 150, 0, 0, 1)"
+    //   }
+
+    // }
+
+
+
+  }
+
+  render() {
+    return (
+      <div className="activities">
+        <ul className="slideshow-container">
+
+          {ActivitiesData.map((item, idx) =>
+            <ActivitiesList
+              key={idx}
+              url={item.url}
+              left={-366 + idx * 600}
+            />
+          )}
+
+
+        </ul>
+        <a class="prev" onClick={() => this.plusSlides(-1, -1)}>&#10094;</a>
+        <a class="next" onClick={() => this.plusSlides(1, 1)}>&#10095;</a>
+
+      </div>
+
+    )
+  }
+}

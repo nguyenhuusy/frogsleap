@@ -8,6 +8,7 @@ class Statistic extends Component {
       <div className="statistic">
         {StatisticData.map((item, idx)=>
           <StatisticList
+          key={idx}
           icon={item.icon}
           number={item.number}
           content={item.content}
